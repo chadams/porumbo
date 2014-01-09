@@ -1,0 +1,65 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Po-Rum-Bo</title>
+        <meta name="description" content="">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+    <!-- build:js scripts/main.js -->
+    <!--script src="components/underscore.js"></script-->
+    <script src="components/crafty.js"></script>
+    <script src="components/jstorage.js"></script>
+    <script src="components/lodash.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/PoRumBo.js"></script>
+    <script src="scripts/components.js"></script>
+    <script src="scripts/ui-components.js"></script>
+    <script src="scripts/stats.js"></script>
+    <!-- scenes -->
+    <script src="scripts/loading-scene.js"></script>
+    <script src="scripts/menu-scene.js"></script>
+    <script src="scripts/boardgame-scene.js"></script>
+    <script src="scripts/stats-scene.js"></script>
+    <script src="scripts/options-scene.js"></script>
+    <script src="scripts/manual-scene.js"></script>
+
+    <script src="phonegap.js"></script>
+    <!--script src="cordova.js"></script-->
+    <script>
+        (function(){
+
+            var launchApplication = function(hasPhoneGap){
+                Crafty.modules('components/', { Tweener: 'RELEASE' }, function () {
+                    Game.start({phonegap:hasPhoneGap});
+                });
+                document.addEventListener('pause', function(){
+                    Crafty.trigger('game:pause');
+                });
+            }
+
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+                document.addEventListener("deviceready", launchApplication.bind(this, true), false);
+            } else {
+                window.addEventListener('load', launchApplication.bind(this, false));
+            }
+
+
+
+
+
+        })();
+    </script>
+    <!-- endbuild -->
+
+    <!-- build:js(.tmp) scripts/coffee.js -->
+    <!-- endbuild -->
+</body>
+</html>

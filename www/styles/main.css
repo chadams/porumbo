@@ -1,0 +1,69 @@
+body{
+    margin:0; padding;0;
+    /*
+    background-repeat: repeat-x;
+    background-image: url(../assets/splash/bg-big.png);
+    */
+
+    background: #dfb04d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dfb04d 0%, #f2de66 60%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfb04d), color-stop(60%,#f2de66)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dfb04d 0%,#f2de66 60%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dfb04d 0%,#f2de66 60%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dfb04d 0%,#f2de66 60%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dfb04d 0%,#f2de66 60%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfb04d', endColorstr='#f2de66',GradientType=0 ); /* IE6-9 */
+
+}
+
+.GameMenu {
+    opacity:0;
+}
+
+.GameMenu .top{
+    margin-top:27px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.score{
+    margin-top:35px;
+    padding: 0 15px 0 15px;
+}
+.logo, .credits{text-align: center;}
+.score .summary{
+    margin-top:35px;
+    text-align: center;
+    background-color: #eee;
+}
+.score .summary th{
+    font-size: 25px;
+    text-align: center;
+}
+.score .summary td{
+    font-size: 25px;
+}
+
+.credits p{font-size: 20px;}
+
+.opt-buttons{text-align: center;}
+
+.HTMLScroll{
+    background-color: white;
+    overflow-y: scroll;
+    padding-top:10px;
+}
+.HTMLScroll .container{
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.center {text-align: center;}
+
+.big{font-size: 90px;}
+.manual{margin-top:35px;}
+.manual p, .manual li{font-size: 30px;}
+.manual h1{margin-top: 10px;margin-bottom: 0px;}
+.manual h2{font-size: 43px;}
+.manual .col-6.sm p{font-size: 20px;}
+/*.paper{background-color: white;}*/
