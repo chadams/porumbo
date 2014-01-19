@@ -4,7 +4,7 @@
         <title>Po-Rum-Bo</title>
         <meta name="description" content="">
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width"/>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
@@ -45,7 +45,7 @@
                 });
             }
 
-            if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+            if (window.cordova) {
                 document.addEventListener("deviceready", launchApplication.bind(this, true), false);
             } else {
                 window.addEventListener('load', launchApplication.bind(this, false));

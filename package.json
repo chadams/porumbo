@@ -1,0 +1,24 @@
+{
+  "name": "porumbo",
+  "version": "0.0.0",
+  "description": "board game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chadams/porumbo.git"
+  },
+  "author": "Chad Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadams/porumbo/issues"
+  },
+  "homepage": "https://github.com/chadams/porumbo",
+  "devDependencies": {
+    "gulp-util": "~2.2.12",
+    "gulp": "~3.4.1",
+    "ecstatic": "~0.4.13"
+  }
+}
