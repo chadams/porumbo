@@ -4,6 +4,7 @@
   "description": "board game",
   "main": "index.js",
   "scripts": {
+    "start":"gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +18,8 @@
   },
   "homepage": "https://github.com/chadams/porumbo",
   "devDependencies": {
-    "gulp-util": "~2.2.12",
-    "gulp": "~3.4.1",
-    "ecstatic": "~0.4.13"
+    "ecstatic": "^0.8.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6"
   }
 }
