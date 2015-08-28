@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.variantllc.PoRumBo" version="1.0.0">
+    <name>PoRumBo</name>
+    <description>
+        Po-Rum-Bo Board Game
+    </description>
+    <author email="chad@variantllc.com" href="http://variantllc.com">
+        Variant
+    </author>
+    <preference name="Orientation" value="portrait" />
+    <access origin="http://127.0.0.1*" />
+</widget>
