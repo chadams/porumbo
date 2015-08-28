@@ -23,7 +23,7 @@ Crafty.scene("menu", function(){
   var storage = $.jStorage;
   var gameData = storage.get('savedGame');
 
-  logo.center().shift(0, padding + 40);
+  logo.center().shift(0, padding + 80);
   newGameBtn.center(1, 2).shift(0, logo.bottom()+padding + extraPad);
   continueBtn.center(2, 2).shift(0, logo.bottom()+padding + extraPad);
   statsBtn.center(1, 2).shift(0, newGameBtn.bottom()+padding);

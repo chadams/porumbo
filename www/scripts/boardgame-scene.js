@@ -2,7 +2,7 @@ Crafty.scene("boardgame", function(params){
   "use strict"
 
   var bg = Crafty.e("2D, Canvas, bg"),
-    topPadding = 15,
+    topPadding = 35,
     pad1 = 3, // minor padding
     pad2 = 40, // major padding
     stats,
